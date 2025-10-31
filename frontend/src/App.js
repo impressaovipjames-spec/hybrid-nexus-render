@@ -25,6 +25,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/confirmacao" element={<ConfirmacaoPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/admin" element={<Navigate to="/admin/login" replace />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route
             path="/admin/dashboard"
